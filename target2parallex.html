@@ -1,0 +1,125 @@
+<html>
+    <style>
+    *{
+        box-sizing:border-box;
+        background-color:rgb(8, 8, 8);
+        padding:0;
+        width: 100%;
+        height:100%;
+        
+    }
+    html{
+        height: 100%;
+        overflow: hidden;
+    }
+
+    body{
+        margin:0;
+        height: 100%;
+        overflow-y:scroll;
+        overflow-x: hidden;
+        perspective: 1px;
+        transform-style: preserve-3d;
+    }
+    section{
+        padding : 25vh 10%;
+        position:relative;
+        min-height: 100vh;
+        width:100vw;
+        transform-style: inherit;
+    }
+
+    section,section:before{
+        background: 50% 50% /cover;
+    }
+section::before{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+
+#base-1::before{
+    background-image:url(targetone/baby.jpg);
+    transform: translateZ(-1px) scale(2);
+    z-index:3;
+
+}
+
+#base-2::before{
+    background-image:url(targetone/logo.jpg);
+    transform: translateZ(-1px) scale(2);
+    z-index:2;
+
+}
+#base-3::before{
+    background-image:url(targetone/catlogo.jpg);
+    transform: translateZ(-1px) scale(2);
+    z-index:1;
+
+}
+.container{
+    
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(55deg, pink,blue);
+  
+  font-size: 2em;
+  margin:0 auto;
+}
+.container1{
+    background: transparent;
+}
+
+    </style>
+    <body>
+        <!-- first section  -->
+        <section id="base-1">
+            
+            <div class="container1">
+                
+    
+                
+                
+            </div>
+
+        </section>
+
+        <!-- second section -->
+            
+            <section class="normal-scroll">
+            <div class="container">
+                
+                The Meme Game<br>
+                Post memes earn site points, win prizes, yes it is that easy.
+                    The member at the top of the top 100 leaderboard wins the daily prize.
+                   
+            </div>
+        </section>
+<!-- third section  -->
+        <section id="base-2">
+            <div class="container">
+                Theme Meme<br>
+                Post memes earn site points, win prizes, yes it is that easy.
+                    The member at the top of the top 100 leaderboard wins the daily prize
+
+            </div>
+        </section>
+
+       
+
+        <section id="base-3">
+            <div class="container1">
+                <!-- Parallex Section 3 -->
+            </div>
+        </section>
+
+
+
+
+
+    </body>
+</html>

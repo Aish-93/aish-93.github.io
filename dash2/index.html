@@ -1,0 +1,436 @@
+<html>
+
+<style>
+body{
+    background-color: gainsboro;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    max-height: 900px;
+    padding: 2em 2em 2em 2em;
+    border-radius: 20px;
+    border: transparent;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+}
+.leftcontainer{
+    /* background-color: yellow;
+     */
+     background-color: transparent; 
+    max-width: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.midcontainer{
+    /* background-color: teal; */
+    background-color: transparent;
+    max-width: 500px;
+    width: 100%;
+}
+.rightcontainer{
+    /* background-color: tomato; */
+    background-color: transparent;
+    max-width: 250px;
+    width:100%;
+}
+
+.l1{
+
+    /* background-color: tan; */
+    background-color: transparent;
+}
+.l2{
+    /* background-color:#00ff7f; */
+    background-color: transparent;
+     max-height: 600px;
+     height:100%;
+    }
+.l3{
+    /* background-color:steelblue; */
+    max-height: 100px;
+    height:100%;
+
+    }
+    i{
+        font-size: 35px;
+    }
+    .l2>ul{
+        margin-top: 2em;
+    }
+    .l2>ul>li{
+        list-style: none;
+        margin-top: 2.2em;
+        padding-top: 1.5em;
+    }
+    .rightcontainer{
+        display: flex;
+        flex-direction: column;
+        
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+    }
+    .r1{
+        /* background-color: salmon; */
+        background-color: transparent;
+        max-height: 200px;
+
+    }
+    .r2{
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* background-color: sandybrown; */
+        background-color: transparent;
+        align-items: center;
+    }
+    .r2>.r2a>i{
+        font-size: 90px;
+        color: blue;
+        /* background-color: transparent; */
+    }
+    .r2b{
+        font-weight: bolder;
+        font-size: 18px;
+    }
+    .r3{
+        /* margin-top: 100px; */
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+        height: 200px;
+        /* background-color: royalblue; */
+        background-color: transparent;
+    }
+
+    .top{
+        /* background-color: rosybrown; */
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    input{
+        border-radius: 10px;
+        width: 180px;
+        height: 30px;
+        border-color: transparent;
+        text-align: left;
+    }
+    select{
+        border-color: transparent;
+        width:100px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    #top2{
+        display: flex;
+        flex-direction: row;
+        /* background-color: red; */
+        background-color: transparent;
+        align-items:center;
+        justify-content:space-around;
+        max-width:300px ;
+        width: 100%;
+    }
+    .folder{
+        /* background-color: purple; */
+
+        font-weight: 900;
+        font-size: 25px;
+        
+    }
+    .paths{
+        max-height: 180px;
+        height: 100%;
+        /* background-color: plum; */
+        background-color: transparent;
+        /* margin-top: 0; */
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: red; */
+    }
+    .pag{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    .p1{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: space-between;
+        max-width: 100px;
+        width: 100%;
+        max-height: 100px ;
+        height: 100%;
+        border-radius: 10px;
+        border:transparent;
+        background-color: white;
+    }
+    .p2{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: space-between;
+        border-radius: 10px;
+        border:transparent;
+        background-color:white;
+        max-width: 100px;
+        width: 100%;
+        max-height: 100px ;
+        height: 100%;
+    }
+    .p3{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: space-between;
+        border-radius: 10px;
+        border:transparent;
+        background-color: white;
+        max-width: 100px;
+        width: 100%;
+        max-height: 100px ;
+        height: 100%;
+    }
+    .p4{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: space-between;
+        border-radius: 10px;
+        border:transparent;
+        background-color: white;
+        max-width: 100px;
+        width: 100%;
+        max-height: 100px ;
+        height: 100%;
+    }
+    .p2>.page>i{
+        color: slateblue;
+    }
+    .p1>.page>i{
+        color:teal;
+    }
+    .p3>.page>i{
+        color:chocolate;
+    }
+    .p4>.page>i{
+        color:crimson;
+    }
+    .base1a>i{
+        color:darkorange;
+    }
+    #files{
+        color: slategray;
+    }
+    #size{
+        font-weight:bolder;
+    }
+    .chart>img{
+        width: 220px;
+         height: 200px;
+
+    }
+    .mid-base{
+        display: flex;
+        justify-content:space-around;
+        /* background-color: yellowgreen; */
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        max-height: 300px;
+
+    }
+    .l3{
+        font-size: 30px;
+        
+    }
+    .base1{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        /* padding-bottom: 10px; */
+    }
+    .base2{
+        margin-top:20px;
+    }
+    .base1a{
+           height: 20px;
+           max-width: 200px;
+           width: 100%;
+           /* background-color: turquoise; */
+           background-color: transparent;
+           border-radius: 5px;
+           padding-top: 5px;
+           margin-top: 5px;
+           font-weight: 800;
+           padding-bottom: 10px;
+    }
+</style>
+
+
+<body>
+    <script src="https://kit.fontawesome.com/6c54259828.js" crossorigin="anonymous"></script>
+    <div class="container">
+        <!-- white box main  -->
+         <div class="leftcontainer">
+            <div class="l1">
+              <h3>Mr.File</h3>
+            </div>
+             <div class="l2">
+              <ul>
+                  <li><i class="fas fa-battery-full"></i></li>
+                  <li><i class="fab fa-chrome"></i></li>
+                  <li><i class="fas fa-cloud-download-alt"></i></li>
+                  <li><i class="far fa-comments"></i></li>
+              </ul>
+            </div>
+
+            <div class="l3">
+               Profile name 
+            </div>
+    
+         </div>
+
+
+         <div class="midcontainer">
+             <div class="top">
+                     <div id="top1"><h2>Dashboard</h2>
+                       </div>
+                      <div id="top2">
+                          <div id="top2a"><input type="search" name="search" placeholder="search-box">
+                           </div>
+                            <div id="top2b">
+                                <select name="phone"id="phone-type">
+                                 <option value="iphone">iphone</option>
+                                   <option value="Samsumg">Samsumg</option>
+                                   <option value="Oneplus">Oneplus</option>
+                                   <option value="Moto">Moto</option>
+                                   <option value="none">none</option>
+                                </select>
+                            </div>
+                        </div>
+                </div>
+              <div class="folder">
+                  <h4>My Folder</h4>
+              </div>
+              <div class="paths">
+                  <div class="p1">
+                    <div class="page"><i class="fas fa-folder-open"></i></div>
+                     <div class="same">Design</div>
+                     <div class="pag">
+                      <div id="files">17Files</div>
+                      <div id="size">3GB</div>
+                    </div>
+                  </div>
+                
+                  <div class="p2">
+                      <div class="page">
+                      <i class="fas fa-folder-open"></i></div>
+                      <div class="same">Images</div>
+                      <div class="pag">
+                        <div id="files">19Files </div>
+                        <div id="size">8GB</div>
+                      </div>
+                  </div>
+                  <div class="p3">
+                      <div class="page">
+                      <i class="fas fa-folder-open"></i></div>
+                      <div class="same">Portfolio</div>
+                      <div class="pag">
+                        <div id="files">457Files </div>
+                        <div id="size">20GB</div>
+                      </div>
+                    </div>
+                  <div class="p4">
+                      <div class="page">
+                      <i class="fas fa-folder-open"></i></div>
+                      <div class="same">Design</div>
+                      <div class="pag">
+                        <div id="files">734Files </div>
+                        <div id="size">9GB</div>
+                      </div>
+                    </div>
+*
+
+              </div>
+              <div class="mid-base">
+                  <div class="base1">
+                      <h4>Recent file</h4>
+                      <div class="base1a"><i class="fas fa-atlas"></i>Marcus Family.jpg</div>
+                      <div class="base1a"><i class="fas fa-atlas"></i>Wrok doc</div>
+                      <div class="base1a"><i class="fas fa-bong"></i>Final design.fig</div>
+                      <div class="base1a"><i class="fas fa-atlas"></i>123fdfd.jpg</div>
+                      <div class="base1a"><i class="fas fa-bong"></i>SVG log.png</div>
+                  </div>
+                  <div class="base2">
+                      <h4>
+                          Activity chart 
+                      </h4>
+                       <div class="chart">
+                        <img src="chart.jpeg" alt="name">
+                       </div>
+                  </div>
+              </div>
+         </div>
+<!-- right most part  -->
+         <div class="rightcontainer">
+             <div class="r1">
+               <svg width="200" height="200"
+                xmlns="http://www.w3.org/2000/svg">
+                <image href="https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png" height="200" width="240"/>
+               </svg>
+              </div>
+               <div class="r2">
+                   <div class="r2a">
+                  <i class="fas fa-chart-pie"></i>
+               </div>
+                <div class="r2b">Avaiable
+               
+                   Storage</div>
+               
+               </div>
+                <div class="r3">
+                    <div class="base1a"><i class="fas fa-file-video"></i>Media
+
+                      </div>
+                    <div class="base1a"></div><i class="fas fa-file-pdf"></i>Documents
+                
+                    </div>
+                    <div class="base1a"><i class="fas fa-file-image"></i>Other files
+                
+                     </div>
+                </div>
+         </div>
+
+
+
+
+
+
+
+    </div>
+
+
+</body>
+</html>

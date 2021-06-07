@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+            
+        }
+
+        body {
+            margin:0px;
+            /* padding: 0px; */
+        }
+        .wrapper{
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            perspective: 1px;
+        }
+        .section {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .parallax::before{
+            content:"";
+            position:absolute;
+            top:0;
+            right: 0;
+            bottom:0;
+            left:0;
+
+            transform: translateZ(-1px) scale(2);
+            background-size: cover;
+            z-index: -1;
+        }
+        .parallax::after{
+            content:"";
+            position:absolute;
+            top:0;
+            right: 0;
+            bottom:0;
+            left:0;
+
+            transform: translateZ(-1px) scale(2);
+            background-size: cover;
+            z-index: -1;
+        }
+        .image1::before{
+            background-image: url(/parallax/images/forest.jpeg);
+
+        }
+        .image2::before{
+            background-image: url(/parallax/images/beach2.jpeg);
+        }
+        .image1::after{
+            background-image: url(/parallax/images/forest.jpeg);
+
+        }
+        .image2::after{
+            background-image: url(/parallax/images/beach2.jpeg);
+        }
+        
+.static {
+  background: #04d3c2;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section parallax image1">
+            <h1>Forest</h1>
+        </div>
+        <div class="section static">
+            <h1>Stoic</h1>
+        </div>
+        <div class="section parallax image2">
+            <h1>Beach</h1>
+        </div>
+        <div class="section static">
+            <h1>Content</h1>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin:0;
+            font-family: 'Lato', sans-serif;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav{
+            display: flex;
+            position: fixed;
+               justify-content: flex-end;
+            
+          
+            background-color: #be3144;
+           
+            min-width: 100vh;
+            width: 100%;
+            
+
+        }
+        .btn{
+            min-height: 50px;
+            height: 100%;
+            min-width: 100px;
+            background-color: transparent;
+            border: none;
+            font-size: 1.25rem;
+            color:white;
+        }
+        .btn:hover{
+            background-color: #45567d;
+        }
+        .navs{
+            margin-right: 1.5rem;
+        }
+        .navs a{
+            text-decoration: none;
+            color:white;
+        }
+
+        #welcome-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            /* min-height: 500px; */
+            min-width: 100vh;
+            background:linear-gradient(45deg,#be3144,black) ;
+            padding-bottom: 10rem;
+        }
+            #welcome-section h1{
+                font-size: 3rem;
+            }
+            #welcome-section h3{
+                font-size: 2rem;
+                font-style: italic;
+            }
+
+            #projects{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            min-height: 900px;
+            min-width: 100vh;
+            background-color:#45567d;
+            padding-bottom: 10rem;
+        } 
+
+        .container{
+            display: flex;
+            
+
+        }
+        .project-tile{
+            width: 100%;
+            min-width: 400px;
+
+            height: 100%;
+            min-height: 500px ;
+            border: 0.3px solid grey;
+            margin:1.25rem;
+        }    
+ 
+
+ a{text-decoration: none;}
+        .name{
+            min-height: 100px;
+            height: 100%;
+            background-color: #303841;
+            color:white;
+            text-decoration: none;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+        .code{
+            margin:0.5rem;
+            color:#303842;
+        }
+        .name:hover .code
+        {
+            color:orange;
+        }
+
+        #projects h1{
+color:white;
+font-size: 2.5rem;
+margin-bottom: 4rem;
+text-decoration: underline;
+text-decoration-line: underline;
+
+text-underline-position: below;
+
+        }
+
+        .show{
+            background-color: #303841;
+            color: white;
+            width: 100%;
+            max-width: 100px;
+            text-decoration: none;
+            height: 100%;
+            min-height: 50px;
+            display: block;
+        }
+
+        .show button{
+            background-color: #303841;
+            text-decoration: none;
+            width: 100%;
+            /* height: 100%; */
+            border:none;
+            cursor: pointer;
+
+        }
+
+        #Contacts
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            min-height: 500px;
+            min-width: 100vh;
+            background-color:#303841;
+            padding-bottom: 3rem;
+        }
+
+        .head{
+            color:white;
+            font-size: 5rem;
+            padding:2rem;
+            font-weight: 900;
+        }
+
+        .head2{
+          color:white;
+          font-size: 1.25rem;
+          font-style: italic;
+
+        }
+
+        .connection{
+            display: flex;
+            margin:2rem;
+            font-size: 4.8rem;
+            
+        }
+        .contact-details:hover{
+            background-color: transparent;
+            transform: translateY(10px);
+            font-weight: 900;
+        }
+
+        .contact-details{
+            transition: transform 0.3s ease-out;
+        }
+
+        .connection a{
+            margin:1rem;
+            /* text-decoration: none; */
+        }
+
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            min-height: 80px;
+
+            background-color: #303841;
+            border-top:2px solid #be3144;
+        }
+        .foot{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            font-size: 1.254rem;
+            color:white;
+        }
+
+    .foot a{
+        text-decoration: none;
+        color:white;
+    }
+
+    #welcome-section h1{
+        color: white;
+    }
+
+    @media (max-width:460px){
+        main{
+            font-size: 1.2rem;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+       
+       nav{
+           width: 100vh;
+       }
+       .project-tile{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+    
+       footer{
+           display: flex;
+        width: 100%;
+        min-width: 100vh;
+       }
+    }
+
+    @media(max-width:992px){
+          main{
+           font-size: 1.2rem;}
+
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .foot{
+ display: flex;
+ flex-direction: column;
+ font-size: 0.8rem;
+ margin:1rem;
+ width: 100%;
+        }
+
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+
+            <nav id="navbar">
+                
+                 <div class="navs">
+                     <button class="btn">
+                           <a href="#navbar" >About</a>  
+                     </button>
+
+                     <button class="btn">
+                              <a href="#projects" >Work</a> 
+                     </button>
+
+                     <button class="btn">
+                              <a href="#Contacts" > Contact</a>
+                     </button>
+                 </div>
+            </nav>
+        </header>
+
+        <section id="welcome-section">
+            <h1>
+                Hey I am Aishwary.
+            </h1>
+
+            <h3>
+                a web developer. 
+            </h3>
+        </section>
+
+        <section id="projects">
+            <h1>
+                These are some of my Projects.
+            </h1>
+
+            <div class="container">
+                <div class="project-tile">
+                   <a href="https://codepen.io/Aish-93/pen/PopZLaV"> 
+                 <img src="c-one.png" alt="first" height="400" width="400">
+                
+                 <p class="name">
+                    <span class="code">&lt; </span>
+                     Tech Doc Page
+                     <span class="code">&#47;&gt;</span>
+                 </p>
+
+                </a>
+
+                </div>
+                <div class="project-tile">
+                    <a href="https://codepen.io/Aish-93/full/bGqENxW"> 
+                        <img src="c-two.png" alt="first" height="400" width="400">
+                       
+                        <p class="name">
+                           <span class="code">&lt; </span>
+                            Landing Page
+                            <span class="code">&#47;&gt;</span>
+                        </p>
+       
+                       </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://codepen.io/Aish-93/full/QWpbVpO"> 
+                        <img src="c-trib.png" alt="first" height="400" width="400">
+                       
+                        <p class="name">
+                           <span class="code">&lt; </span>
+                            Tribute Page
+                            <span class="code">&#47;&gt;</span>
+                        </p>
+       
+                       </a>
+                </div>
+
+                
+            </div>
+
+            <div class="show">
+                <button href="#" target="_blank">
+                    Show All
+                </button>
+            </div>
+        </section>
+
+        <section id="Contacts">
+            <p class="head">
+                Let's work together...
+            </p>
+            <p class="head2">How do you take your coffee?</p>
+            <div class="connection">
+                <a
+      href="https://facebook.com/freecodecamp"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-facebook-square"></i> Facebook</a
+    >
+    <a
+      id="profile-link"
+      href="https://github.com/freecodecamp"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-github"></i> GitHub</a
+    >
+    <a
+      href="https://twitter.com/freecodecamp"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-twitter"></i> Twitter</a
+    >
+    <a href="mailto:example@example.com" class="btn contact-details"
+      ><i class="fas fa-at"></i> Send a mail</a
+    >
+    <a href="tel:555-555-5555" class="btn contact-details"
+      ><i class="fas fa-mobile-alt"></i> Call me</a
+    >
+            </div>
+        </section>
+       
+
+<footer>
+    <div class="foot">
+         <p>
+            **This is just a fake portfolio. All the projects and contact details given are not real.
+
+
+         </p>
+         <a href="https://www.freecodecamp.org/">
+            © Created for freeCodeCamp 
+         </a>
+    </div>
+</footer>
+    </main>
+
+</body>
+</html>

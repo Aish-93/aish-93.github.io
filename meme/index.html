@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0 ;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    .main{
+        min-height: 100vh;
+        background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .glass{
+        background: white;
+        min-height: 80vh;
+        width: 60% ;
+        background: linear-gradient(to right bottom,rgba(255,255,255,0.7),
+                                        rgba(255,255,255,0.3));
+        border-radius: 2rem;   
+        z-index: 3; 
+        backdrop-filter: blur(2rem);  
+        /* for the blurr effects in csss                           */
+    }
+    .circle1,.circle2{
+        height: 20rem;
+        position: absolute;
+        border-radius: 50%;
+        width: 20rem;
+        background: white;
+        background: linear-gradient(to right bottom,rgba(255,255,255,0.8),
+                                        rgba(255,255,255,0.3));
+    }
+    .circle1{
+        top:5%;
+        right:15%;
+          z-index: 0;
+          /* background: magenta; */
+    }
+    .circle2{
+        bottom:5%;
+        left:10%;
+        z-index: 0;
+    }
+    body{
+        /* min-height: 100vh; */
+    }
+    
+
+</style>
+<body>
+    <div class="main">
+        <section class="glass">
+
+        </section>
+    </div>
+        <div class="circle1">
+
+        </div>
+
+        <div class="circle2">
+
+        
+       </div>
+    
+</body>
+</html>

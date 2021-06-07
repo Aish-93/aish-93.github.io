@@ -1,0 +1,600 @@
+<html>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+        body{
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: #eee;
+            display: flex;
+            
+            justify-content: center;
+        }
+       .container{
+           display: flex;
+            flex-direction: row;
+           background-color: white;
+           width: 1200px;
+           height: 1200px;
+           margin-top: 50px;
+           margin-bottom: 50px;
+           border-radius: 20px;
+       }
+       .left{
+           /* background-color: rgb(214, 67, 177); */
+           width: 80px;
+           max-height: 1200px;
+           height: 100%;
+           background-color: transparent;
+           
+       }
+       .left>ul>li{
+           list-style: none;
+           font-size: 27px;
+           margin-top: 35px;
+           color: gray;
+       }
+       #far{
+           border-radius: 50%;
+           color: darkviolet;
+       }
+       .mid{ 
+           width: 750px;
+        max-height: 1200px;
+           height: 100%;
+           /* background-color: tomato; */
+           background-color: transparent;
+           display: flex;
+
+       }
+       .mida{
+           display: flex;
+           flex-direction: column;
+           max-width: 400px;
+           width: 100%;
+       }
+       .mida1{
+            height:100%;
+            max-height: 900px;
+           max-width: 400px;
+           width: 100%;
+           /* background-color: violet; */
+           background-color: transparent;
+           display: flex;
+           flex-direction: column;
+       }
+       .midas{
+           max-height: 300px;
+           height: 100%;
+           /* background-color: green; */
+           background-color: transparent;
+           margin-left: 30px;
+       }
+       .black{
+           color:rgb(105, 29, 177);
+           max-height:160px;
+           height: 100%;
+           border-radius: 6%;
+           margin-top: 71px;
+           background-color: rgba(2, 1, 24, 0.897);
+       }
+       .black1>h4{
+           margin-left: -36px;
+           
+       }
+       .black1>h2{
+           margin-left: 43px;
+           margin-bottom: 20px;
+       }
+       .black1{
+           display: flex;
+           height: 50px;
+           justify-content: center;
+       }
+       .black1>i{
+           font-size: 50px;
+           background: transparent;
+           border-radius: 50%;
+           background-image:linear-gradient(50deg,rgb(206, 26, 56),darkblue);
+       }
+       .black2{
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+           align-items: center;
+           
+       }
+       #b2>h5{
+           margin-left: 30px;
+           
+       }
+       #b2{
+            margin-left: 30px;
+            margin-top: -5px;
+
+       }
+       .black3{
+           max-height: 5px;
+           height: 100%;
+           /* background-color: blueviolet; */
+           color: transparent;
+           background-image: linear-gradient(to right,blueviolet,rgb(32, 29, 29));
+           max-width: 200px;
+           width: 100%;
+           margin-left: 80px;
+           border-radius: 3px;
+           margin-top: -20px;
+           
+
+           
+           
+
+       }
+       .bat{
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+        
+       }
+       .bat1{
+           padding-left: 18px;
+           color: purple;
+           font-size: 16px;
+       }
+       .bat2{
+           padding-right: 15px;
+           font-size: 16px;
+       }
+       .midas>h3{
+        padding-left: 30px;
+        margin-top: 20px;
+       }
+       .midas>h2{
+                 text-align: center;
+                 font-size: 30px;
+                 
+       }
+       .bat1>i{
+           /* padding-right: 10px; */
+           margin-right: 10px;
+           background-color: rgb(207, 206, 206);
+           border-radius: 50%;
+       }
+       .bat2>i{
+           padding-right: 10px;
+           /* margin-right: 20px; */
+       }
+       .midas>h1{
+           margin-left: 40px;
+           padding-left: 20px;
+       }
+       .midas>h4{
+           font-size: 23px;
+           text-align: center;
+           margin-top: -20px;
+           color: rgb(202, 199, 199);
+        }
+        .avatar1 {
+             vertical-align: middle;
+             width: 20px;
+             height: 20px;
+             /* padding-right: 10px; */
+             /* padding-left: 10px; */
+             margin-top: 10px;
+              border-radius: 50%;
+              }
+           #x1{
+               margin-top: -40px;
+               margin-left: 82px;
+               padding-left: 50px;
+           }   
+       #a9{ 
+           color:rgb(153, 149, 149);
+
+       }
+       #a1{
+        font-size: 38px;
+           padding-left: 30px;
+             display: flex;
+
+       }
+       .midb{
+           display: flex;
+           flex-direction: column;
+           max-width: 350px;
+           width: 100%;
+           margin-right: 10px;
+           margin-left: 10px;
+
+       }
+       .mida2{
+           display: flex;
+           flex-direction: column;
+           justify-content: space-around;
+           max-height: 300px;
+           height: 100%;
+       }
+       .brands{
+           max-width: 300px;
+           width: 100%;
+           /* background-color: steelblue; */
+           background-color: transparent;
+           height: 100%;
+           max-height: 50px;
+           font-size: 25px;
+           border:  rgb(212, 212, 212);
+           border-radius: 10px;
+           
+           margin-top: 45px;
+           padding-top: 20px;
+           margin-left: 25px;
+           display: flex;
+           flex-direction: row;
+           padding-bottom: 20px;
+
+       }
+       
+       #proj{
+           font-size: x-large;
+           margin-left: 34px;
+       }
+       
+
+    
+
+
+       
+       .int{
+            margin-right: 10px;
+           max-width: 40px;
+           max-height: 40px;
+           width: 100%;
+           height: 100%;
+           border-radius: 25%;
+           background-color: rgb(233, 245, 233);
+
+       }
+
+       .chart{
+            height:100%;
+            max-height: 400px;
+           max-width: 400px;
+           width: 100%;
+           /* background-color:blue; */
+           background-color: transparent;
+           
+           }
+           .charta{
+               display: flex;
+               height:100%;
+            max-height: 400px;
+           max-width: 400px;
+           width: 100%;
+           /* background-color:blue; */
+           background-color: transparent;
+           justify-content: space-between;
+           align-items: flex-end;
+           
+           }
+           .mem2{
+               margin-right:20px;
+           }
+           .charta1{
+               margin-bottom: 46px;
+           }
+           .charta1>.data>i{
+               font-size: 20px;
+               margin-right: 20px;
+               margin-left: 20px; 
+           }
+           .two{
+               width:180px;
+
+               height:200px;
+           }
+           .data{
+            color:rgb(153, 149, 149);
+               margin-top: 30px;
+               margin-bottom: 30px;
+           }
+
+       .right{
+           max-width: 380px;
+           width: 100%;
+
+        max-height: 1200px;
+           height: 100%;
+           /* background-color: teal; */
+           background-color: transparent;
+           display: flex;
+           flex-direction: column;
+       }
+       .rig1{
+           display: flex;
+           flex-direction: column;
+           max-height: 300px; 
+           height:100%;
+           /* background-color: orange; */
+           background-color: transparent;
+       }
+       .riga{
+           display: flex;
+           flex-direction: row;
+           justify-content:center;
+           border-radius: 10px;
+       }
+         #tw{
+             display: flex;
+             justify-content: space-between;
+         }
+
+       .first{
+           width: 350px;
+           height: 350px;
+           
+       }
+       .riga1{
+           font-size: 2em;
+           /* background-color: darkturquoise; */
+           background-color: transparent;
+           border:gray;
+           width: 140px;
+           border-radius: 10px;
+           height: 150px;
+           /* border:thick; */
+           /* border-color: black; */
+
+           
+       }
+       .riga1>h6{
+              margin-left: 10px;
+             margin-top: 10px;
+            font-size: 16px;
+           color:rgba(224, 222, 222, 0.856);
+       }
+       .rig2>span{
+           font-size: 25px;
+           padding-right: 50px;
+           margin-right: 20px;
+       }
+       .riga1>i{
+           color: orangered;
+           font-size: 100px;
+       }
+       .riga2{
+           font-size: 2em;
+           background-color: darkturquoise;
+       }
+       .rig2{
+        max-height: 600px; 
+           height:100%;
+           /* background-color: darkred; */
+           background-color: transparent;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           /* align-items:baseline; */
+
+
+       }
+       #stat{
+           margin-left: 50px;
+       }
+ .bun{
+     font-size: 25px;
+     max-height: 150px;
+     height:100%;
+     margin-left: 18px;
+ }
+ .bun>i{
+     color: orangered;
+     border-radius: 5px;
+     border:transparent;
+     margin-right: 10px;
+     font-size: 40px;
+     margin-left: 20px;
+     width: 50px;
+     background-color:white;
+     height: 40px;
+ }
+ .ban{
+    max-height: 150px;
+     height:100%;
+     font-size: 25px;
+     margin-right: 20px;
+
+ }
+
+ span{
+     font-size: 14px;
+     margin-left: 80px;
+      color:rgb(153, 149, 149);
+ }
+       .buna{
+           margin-top: 30px;
+           display: flex;
+           flex-direction: column;
+       }
+       .bunb{
+        margin-top: 45px;
+           display: flex;
+           flex-direction: column;
+       }
+       .top{
+             margin-top:20px;
+           display: flex;
+           flex-direction: row;
+          align-content: space-around;
+       }
+       .top>i{
+           padding-right: 80px;
+           font-size: 25px;
+       }
+       .mem{
+           display: flex;
+           justify-content: space-between;
+           align-items: baseline;
+       }
+       .mem1{
+           font-size: 28px;
+       }
+
+       .memlogo{
+           margin-top: 50px;
+       }
+       .avatar {
+             vertical-align: middle;
+             width: 50px;
+             height: 60px;
+             padding-right: 10px;
+             padding-left: 10px;
+             margin-top: 10px;
+              border-radius: 50%;
+}
+    </style>
+    <body> 
+        <script src="https://kit.fontawesome.com/6c54259828.js" crossorigin="anonymous"></script>
+        <div class="container">
+            <div class="left">
+                <ul>
+                    <li id="far"><i class="fab fa-stumbleupon-circle"></i></li>
+                    <li><i class="fas fa-comment-alt"></i></li>
+                    <li><i class="fas fa-sms"></i></li>
+                    <li><i class="fas fa-mask"></i></li>
+                    <li><i class="fab fa-facebook-messenger"></i></li>
+                    <li><i class="fab fa-mastodon"></i></li>
+                </ul>
+            </div>
+            <div class="mid">
+             <div class="mida">
+                <div class="mida1">
+                    <div class="midas">
+                        <h3>Current Amount</h3>
+                       <div id="a1"> <h1>$5,90</h1><h1 id="a9">.80</h1></div>
+                       <div class="bat">
+                           <div class="bat1"><i class="fas fa-location-arrow"></i>+08% Mar</div>
+                           <div class="bat2"><i class="far fa-handshake"></i>Withdraw all Earning</div>
+                       </div>
+                    </div>
+                    <div class="midas">
+                        <div class="black">
+                            <div class="black1"><i class="far fa-circle"></i>
+                                <h4>37%</h4>
+                                <h2>Task Overview</h2>
+                                
+                            </div>
+                            <div class="black2">
+                                <div id="b2">task activity</div>
+                                <div id="b2"><h5>medicos-App design</h5></div>
+                                <div class="black3"></div> Progress
+                            </div>
+                            <div class="black3"></div>
+                        </div>
+                    </div>
+                   <div class="midas">
+                       <h2>Active users</h2>
+                       <h4>visitors overview</h4><br>
+                      <div id="x1" ><img src="pic4.jpeg" class="avatar1">
+                       <img src="pic3.jpeg" class="avatar1">
+                       <img src="pic2.jpeg" class="avatar1">
+                       <img src="pic3.jpeg" class="avatar1">
+                    </div>
+
+                   </div>
+                </div>
+                <div class="mida2">
+                   <div id="proj"> Project</div>
+                    <div class="brands"><img src="firefox.png"class="int">Firebox Branding
+                    
+                    </div>
+                    <div class="brands"><img src="insta.jpg "class="int">Instagram
+                        
+                    </div>
+
+                </div>
+             </div>
+             <div class="midb">
+               <div class="chart">
+                   <h3>Earnings</h3>
+                   <img class="first" name="chart" src="monthly.jpeg">
+               </div>
+               <div class="chart">
+                   <div id="tw"><h3>Team work</h3><h6>Last 30 day's</h6></div>
+                   <img class="first" name="chart" src="area.png"></div>
+               <div class="charta">
+                   <div class="charta1">
+                       <div class="data"><i class="fas fa-database"></i>23.5 <i class="fas fa-heart" style="color: red"></i></div>
+                       <div class="data"><i class="fas fa-database"></i>35.7<i class="fas fa-heart"style="color: red;"></i></div>
+                       <div class="data"><i class="fas fa-database"></i>42.3<i class="fas fa-heart"style="color: red;"></i></div>
+                   </div>
+                   <div class="charta1">
+                       <h3>Traffic Channal</h3>
+                       <img class="two" name="traffic" src="data-traffic.png">
+                </div>
+
+               </div>
+             </div>
+            </div>
+            <div class="right">
+                <div class="top">
+                    <i class="fas fa-search"></i>
+                    <i class="far fa-comment-dots"></i>
+                    <i class="fas fa-headset"></i>
+                    <i class="fab fa-snapchat"></i>
+                </div>
+                <div class="rig1">
+                 <div id="stat"><h2>Statistics</h2></div>   
+                 <div class="riga">
+                     <div class="riga1">
+                        <i class="fas fa-chart-bar"></i>
+                        <br>15,980<h6>Income</h6></div>
+                     <div class="riga1">
+                        <i class="fas fa-chart-area"></i><br> 
+                        4,324<h6>Expense</h6></div>
+                 </div>
+                </div>
+                <div class="rig2">
+                    
+                    <div class="buna">
+                        <div class="bun">Earning By Categories</div>
+                      <div class="bun"><i class="fas fa-box"></i>Wireframe Kits<br>
+                        <span >Jacob</span></div>
+                      <div class="bun"><i class="fas fa-box-open" style="color:rgb(240, 32, 66)"></i>Illustrations<br>
+                        <span >Chimpanzee</span>
+                      </div>
+                      <div class="bun"><i class="fab fa-xbox" style="color:rgb(60, 157, 196)"></i>User interface
+                        <br>
+                        <span >Squirrelant</span></div>
+                    </div>
+                    <div class="bunb">
+                        <div class="ban" style="font-size: 12px; color: rgb(61, 101, 212);">VIEW ALL</div>
+                        <div class="ban">$542</div>
+                        <div class="ban">$34</div>
+                        <div class="ban">$621</div>
+                        
+                    </div>
+                </div>
+                <div class="rig1">
+                    <div class="mem">
+                        <div class="mem1">28 Members</div>
+                        <div class="mem2" style="color: rgb(61, 101, 212);">VIEW ALL</div>
+                    </div>
+                    <div class="memlogo">
+                      <img src="picimg.jpeg" class="avatar">
+                      <img src="pic2.jpeg" class="avatar">
+                      <img src="pic3.jpeg" class="avatar">
+                      <img src="pic4.jpeg" class="avatar">
+                      <img src="pic2.jpeg" class="avatar">
+                      <br>
+                      <img src="picimg.jpeg" class="avatar">
+                      <img src="pic5.jpeg" class="avatar">
+                      <img src="pic2.jpeg" class="avatar">
+                      <img src="pic3.jpeg" class="avatar">
+                      <img src="pic4.jpeg" class="avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    
+</html>

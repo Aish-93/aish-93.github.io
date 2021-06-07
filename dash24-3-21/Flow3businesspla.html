@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+    *{
+        font-family: 'Lato', sans-serif;
+        margin :0;
+         
+        padding: 0;
+        box-sizing: border-box;
+    }
+  
+    body{ max-width: 1360px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        margin-left: auto;
+        margin-right: auto;
+        background: #F8F8F8;
+        
+        
+    }
+    .head{
+        max-width: 1360px;
+        width:100% ;
+        min-height: 60px;
+        height: 100%;
+        background: #F8F8F8 0% 0% no-repeat padding-box;
+        border-radius: 8px 8px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        flex-direction: row;
+    }
+    .dota,.dotb,.dotc{
+        width: 14px;
+          height: 14px;
+          background: #FF5F57 0% 0% no-repeat padding-box;
+           border: 1px solid #DB554F;
+           border-radius: 50%;
+           /* padding: 10px; */
+           margin-right: 10px;
+    }
+    .dotb{
+        background: #FFC22F 0% 0% no-repeat padding-box;
+        
+        border: 1px solid #DBA729;
+    }
+    .dotc{
+        background: #2CD042 0% 0% no-repeat padding-box;
+        border: 1px solid #25BA39;
+        
+    }
+    .beta,.alfa{
+        display:flex ;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top:auto;
+        margin-bottom: auto;
+    }
+    .alfa,.alfa>input{
+        width: 342px;
+        min-height: 36px;
+        height:100% ;
+        border-radius: 18px;
+        border-style: none;
+        
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        
+    }
+    .dotd{
+        margin-left: 20px;
+    }
+    .alfa>input{
+        outline: none;
+        padding-left: 10px;
+
+    }
+   
+    .alfa{
+        margin-left: 50rem;
+    }
+    .head>img{
+        width: 16px;
+         height: 60px;
+         margin-left: 48px;
+         background: #F8F8F8;
+    }
+    
+    
+    .main{
+        display: flex;
+        flex-direction: row;
+        width: 1360px;
+        height: 810px;
+        }
+   /* left  */
+
+   .left{
+    width: 250px;
+    min-height: 840px;
+    height: auto;
+    background: #F4F4F4 0% 0% no-repeat padding-box;
+    padding-top: 20px;
+    padding-left: 20px;
+
+   }
+   .avatar{
+       border-radius: 50%;
+       width: 32px;
+       height: 32px;
+   }
+   .profile{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+   }
+   .pro2{
+       padding-left: 15px;
+   }
+   .pro3{
+    width: 28px;
+    height: 23px;
+    padding-left: 35px;
+   }
+   .notes{
+       display: flex;
+       flex-direction: column;
+       padding-top: 30px;
+
+   }
+   .notes-items{
+    width: 230px;
+     height: 46px;
+     font-size: 13px;
+     
+     letter-spacing: 0.65px;
+     color: #2C2731;
+     text-align: left;
+     padding-left: 28px;
+     display: flex;
+     
+     align-items: center;
+   }
+   .notes-items:hover{
+    background: #EAEAEA 0% 0% no-repeat padding-box;
+      border-radius: 24px 0px 0px 24px;
+
+   }
+   .notes-items>img{
+       pointer-events: none;
+   }
+   select{
+       text-transform: uppercase;
+         width: 230px;
+     height: 46px;
+     font-size: 13px;
+     background: #EAEAEA 0% 0% no-repeat padding-box;
+      border-radius: 24px 0px 0px 24px;
+      border-style: none;
+      outline: none;
+      appearance: none;
+      cursor: pointer;
+
+   } 
+   
+   
+   /* intresting  */
+   .notes-items:focus-within
+   {
+    box-shadow: 0 2px 10px -2px black;
+    min-width: 230px;
+    height: 100%;
+    width: 100%;
+    min-height: 176px;
+    text-align:right;
+    
+   }
+   .notes-items>h6{
+       padding-left: 25px;
+   }
+   
+   .center{
+       display: flex;
+       flex-direction: column;
+    width: 414px;
+     height: auto;
+   }
+   .center-top{
+       display: flex;
+       flex-direction: row;
+       width: 414px;
+       height: 63px;
+       background: #FFFFFF 0% 0% no-repeat padding-box;
+       justify-content: space-around;
+    align-items: center;
+   }
+   .center-topa>img
+   {
+     /* padding-top: 10px; */
+   }
+   .center-topa{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+   }
+   .center-topb{
+    width: 122px;
+    height: 32px;
+    background: #32A05F 0% 0% no-repeat padding-box;
+     border-radius: 16px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #FFFFFF;
+     font-size: 12px;
+   }
+.overflow{
+    height: 810px;
+    /* height: 100%; */
+    width: 414px;
+    /* display: flex; */
+    
+    flex-direction: column;
+     overflow-x: hidden;
+     overflow-y:scroll;
+
+     
+}
+
+/* this has to be learned */
+.overflow::-webkit-scrollbar {
+    display: none;
+}
+.overflow-items>a{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.overflow-items{
+    width: 414px;
+    
+    height: 140px;
+display: flex;
+flex-direction: column;
+
+background-color: #f4f4f4;
+
+/* border:1px solid; */
+color:#bbc2bd;
+}
+.overflow-items:hover{
+    
+    background-color: #ffffff;
+    border:1px solid;
+    z-index: 1;
+    box-shadow: 0 2px 10px -2px black;
+}
+
+.overflow-items>h2{
+    color:#000000DE;
+}
+.overflow-items>h6,h2,h5{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 48px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    
+    
+}
+.btn>button{
+    background-color: #c3e3d1;
+    padding-right: 10px;
+    border-width: 0px;
+    border-color: 0;
+    appearance: none;
+    margin-right: 5px;
+    font-size: 12px;
+    color:#4fc781;
+    outline:oldlace;
+    width: 75px;
+    text-align: center;
+    
+
+}
+.right{
+     width: 737px;
+     height: 840px;
+     display: flex;
+     background-color: #fefefe;
+     flex-direction: column;
+     padding-left: 20px;
+
+}
+.right-top{
+    min-width: 737px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    background: #EFEFEF 0% 0% no-repeat padding-box;
+}
+.right-top-items1{
+    width: 172px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 8px 0px 0px;
+    background: #FFF 0% 0% no-repeat padding-box;
+}
+.right-top-items2{
+    width: 134px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EFEFEF 0% 0% no-repeat padding-box;
+}
+.whitebox{
+    color:#bbc2c2;
+    margin-left: 72px;
+    min-width: 605px;
+    height:600px;
+    background-color: white;
+display:flex ;
+flex-direction: column;
+border-bottom: 1px solid rgba(179, 178, 178, 0.315);
+}
+.whitebox-item1,.whitebox-item2{
+    min-width: 605px;
+    min-height: 40px;
+    /* height: 100%; */
+    background-color:white;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.whitebox-head{
+    color: #000000DE;
+}
+.whitebox-item3{
+    min-width: 605px;
+    min-height: 700px;
+    height:30%;
+    /* background-color: green; */
+    overflow-y: scroll;
+}
+.whitebox-item3::-webkit-scrollbar {
+    display: none;
+}
+.box-item{
+    width: 605px;
+    height: 192px;
+    display: flex;
+    flex-direction: column;
+
+}
+.box-itema{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width:605px;
+    height:40px;
+    padding-top:20px;
+    padding-bottom:20px;
+    color: #2C2731;
+
+}
+.box-item2{
+    color:black;
+}
+.box-item2 > img{
+        width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+.box-item1{
+    padding-right: 10px;
+    width: 120px;
+}
+.box-item3{
+    margin-left: 10px;
+}
+.box-strap{
+    width:605px;
+    height:39px;
+    /* background-color: greenyellow; */
+    background: transparent;
+    
+    font-size: 12px;
+    
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    width:605px ;
+    text-align: left;
+}
+h3{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: black;
+    margin-top: 20px;
+}
+.slider-item{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: center;
+    width: 605px;
+    /* min-height: 150px; */
+    overflow-x:scroll ;
+    
+}
+.slider-item1{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.slider-item::-webkit-scrollbar {
+    display: none;
+}
+.content,.content-a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+.content-a{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+ul>li{
+    list-style:disc;
+}
+.menus{
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.menus1{
+
+margin-top: 20px;
+margin-bottom: 30px;
+}
+
+</style>
+<body>
+    <section class="head">
+       <div class="beta">
+          <div class="dota">
+
+         </div>
+          <div class="dotb">
+
+          </div>
+         <div class="dotc">
+
+           </div>
+         <div class="dotd">
+            NOTES.XD
+
+           </div>
+       </div>
+        <div class="alfa">
+           <img src="bang/search.svg" alt="search-icon">
+           <input type="search" name="search" 
+            id="search" placeholder="search">
+            
+          
+          </div>
+
+        <img src="bang/bell.svg" alt="bell"
+        
+        >
+     </div>
+        
+
+    </section>
+    
+    <!-- main body head right top search input  -->
+    
+    <div class="main">
+           <!-- left  -->
+          <div class="left">
+             <!-- div  -->
+             <div class="profile">
+
+                  <div class="pro1">
+                  <img class="avatar" src="bang/avatar.png" alt="profile pic">
+                 </div>
+                <div class="pro2">Steve Harris</div>
+
+                 <div class="pro3" >
+                     <img src="bang/expand.svg" alt="down">
+                 </div>
+               </div>
+         
+      
+           <!-- profile pic with name along dropdown  -->
+
+            <!-- div  -->
+         
+             <!-- 4 div with dropdown similar divs -->
+           <div class="notes">
+             <div class="notes-items" style="
+             background: #EAEAEA 0% 0% no-repeat padding-box;
+               border-radius: 24px 0px 0px 24px;">
+               <img src="bang/arrowrt.svg" alt="arrowright">
+               <select>
+         
+                <option value="">
+
+                NOTES
+                </option>
+              <option value="" class="best">Personal(7)</option>
+              <option value="">Bussiness(4)</option>
+              <option value="">Private(2)</option>
+              </select>
+              </div>  
+
+             <div class="notes-items">
+              <img src="bang/arrowrt.svg" alt="arrowright">
+            
+                TASKS 
+            
+              </div> 
+              <div class="notes-items">
+               <img src="bang/arrowrt.svg" alt="arrowright"> FOLDER 1
+               </div> 
+              <div class="notes-items">
+              <img src="bang/arrowrt.svg" alt="arrowright">
+               FOLDER 2
+            
+            
+               </div>  
+
+               <div class="notes-items">
+               <h6>DRAFT (1)</h6>
+               </div>
+
+               <div class="notes-items">
+                <h6>TRASH (4)</h6>
+               </div> 
+              </div>
+     
+            </div>
+
+              <!-- center -->
+         <div class="center">
+                 <div class="center-top">
+                 <div class="center-topa">Last Update
+                <img src="bang/expand.svg" alt="down">
+                 </div>
+             
+                 <div class="center-topb">+ NEW NOTE</div>
+              </div>
+       
+               <div class="overflow">
+               <div class="overflow-items">
+                <h6>MAY 5</h6>
+               <h2>Visual Inspiration</h2>
+               <h5>Let's collect inspiration for our truck and menu</h5>
+               <div class="btn"> 
+                <button>#TAGNEME</button>
+            <button>#FOODTRUCK</button>
+            <button>#DESIGN</button>
+            <button>#MENU</button>
+             </div>
+          </div>
+
+         <div class="overflow-items"
+         
+         >
+            <h6>MAY 5</h6>
+          <a href="Flow2location.html"> <h2>Locations</h2></a>>
+            <h5>@Steve @Julia - here are some ideas i have for you</h5>
+           <div class="btn"> 
+            <button>#TAGNEME</button>
+            <button>#FOODTRUCK</button>
+            <button>#DESIGN</button>
+            <button>#MENU</button>
+             </div>
+         </div>
+
+          <div class="overflow-items"
+          style=" background-color: #ffffff;
+         border:1px solid;
+         z-index: 1;
+         box-shadow: 0 2px 10px -2px black;"
+          >
+            <h6>MAY 5</h6>
+          <h2>Business Plan</h2>
+            <h5>I wanted to create a note to tarck our business plan</h5>
+           <div class="btn"> 
+            <button>#TAGNEME</button>
+            <button>#FOODTRUCK</button>
+            <button>#DESIGN</button>
+            <button>#MENU</button>
+             </div>
+
+          </div>
+
+          <div class="overflow-items">
+            <h6>MAY 5</h6>
+            <h2>Design Refrences</h2>
+            <h5>Let's collect inspiration from our truck and menu</h5>
+           <div class="btn"> 
+            <button>#TAGNEME</button>
+            <button>#FOODTRUCK</button>
+            <button>#DESIGN</button>
+            <button>#MENU</button>
+             </div>
+          </div>
+
+          <div class="overflow-items">
+            <h6>MAY 5</h6>
+            <h2>Design Refrences 2</h2>
+            <h5>Let's collect inspiration for our truck and menu</h5>
+           <div class="btn"> 
+            <button>#TAGNEME</button>
+            <button>#FOODTRUCK</button>
+            <button>#DESIGN</button>
+            <button>#MENU</button>
+             </div>
+          </div>
+
+          <div class="overflow-items">
+            <h6>MAY 5</h6>
+            <h2>Note Titele Example</h2>
+            <h5>Let's collect inspiration for our truck and menu</h5>
+           <div class="btn"> 
+            <button>#TAGNEME</button>
+            <button>#FOODTRUCK</button>
+            <button>#DESIGN</button>
+            <button>#MENU</button>
+             </div>
+          </div>
+
+          <div class="overflow-items">
+            <h6>MAY 5</h6>
+            <h2>Note Title Example 2</h2>
+            <h5>Let's collect inspiration for our truck and menu</h5>
+           <div class="btn"> 
+            <button>#TAGNEME</button>
+            <button>#FOODTRUCK</button>
+            <button>#DESIGN</button>
+            <button>#MENU</button>
+             </div>
+           </div>
+
+        
+        </div>
+
+    </div>
+
+    
+     
+     <!-- 2 div under  div a-dropdown, b-note-calling a page -->
+
+     <!-- 7 div under 1 div for content overflow y  -->
+
+     <!-- right -->
+    <div class="right">
+           <div class="right-top">
+             <div class="right-top-items1" style="font-size: 20px;">
+             Business Plan
+             </div>
+              <div class="right-top-items2">
+               Food Truck 
+               </div>
+               <div class="right-top-items2">
+              Cooing recipes
+               </div>
+            </div>
+
+        <div class="whitebox">
+            <div class="whitebox-item1">
+             <img src="bang/share.svg" alt="share">
+             <img src="bang/dots.svg" alt="dots">
+            </div>
+            <div class="whitebox-item2">
+              
+            </div>
+            <div class="whitebox-item3">
+                <div class="whitebox-head">
+                    <h1>
+                        Business Plan
+                    </h1>
+                </div>
+              <div class="box-item">
+                 <div class="box-itema">
+                   <div class="box-item1"> 
+                   Created by
+                   </div>
+                   <div class="box-item2">
+                       <img src="bang/avatar.png" alt="pic">
+                    Steve Harris
+                   </div>
+                   
+
+                 </div>
+
+                  <div class="box-itema">
+                  <div class="box-item1"> Collaborator
+                   </div>
+                  <div class="box-item2">
+                      <img src="bang/avatar.png" alt="pic">
+                    Julia hughes
+                  </div>
+                 </div>
+
+                 <div class="box-itema">
+                    <div class="box-item1"> Last Updated
+                    </div>
+                   <div class="box-item3">
+                       May 5 2020 at 10:30 AM
+                   </div>
+
+                 </div>
+
+                 <div class="box-itema">
+                    <div class="box-item1"> Tags
+                    </div>
+                   <div class="box-item3">
+                    <div class="btn"> 
+                        <button>#TAGNEME</button>
+                        <button>#FOODTRUCK</button>
+                        <button>#DESIGN</button>
+                        <button>#MENU</button>
+                        <button>#PLANS</button>
+                        <button>#SHARE</button>
+                         </div>
+                   </div>
+
+                 </div>
+
+                
+                </div>
+
+                <div class="box-strap">
+                 <img src="bang/Text Editor.svg" alt="text Editor">
+                </div>
+                <div class="box-strap">
+                 <span style="color:black;" style="font-size: 16px;"
+                 > @Steve @Julia</span> here are some ideas for potential locations. We will<br>
+                    need to check with city to make sure we can park the truck extended periods
+                </div>
+                
+                <div class="slider">
+                 <!-- <h3>Truck Design:</h3> -->
+                 <div class="slider-item">
+                     <div class="slider-item1" style="margin-left: 1px;">
+                        <div class="content" >
+                            <h4 style="color :black;">Executive summury</h4>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet facilis neque sapiente iste quidem eaque unde quaerat obcaecati nam, incidunt ex maxime reprehenderit voluptas, rem distinctio alias, rerum deserunt dolorem!
+                            I tend to prefer locations close to the National mall.
+                            We will be able to attract
+                        </div>
+
+                        <div class="content" >
+                            <h4 style="color :black;">Target</h4>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet facilis neque sapiente iste quidem eaque unde quaerat obcaecati nam, incidunt ex maxime reprehenderit voluptas, rem distinctio alias, rerum deserunt dolorem!
+                            I tend to prefer locations close to the National mall.
+                            We will be able to attract
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, molestiae!
+                        </div>
+                        <div class="content-a">
+                            <h4 style="color :black;">Business objective</h4>
+                            My top 3 locations options are :
+                            <ul>
+                                <li> 14th and F streat </li>
+                                <li>Constituion and 20th street</li>
+                                
+                                <li>Ten downing treet</li>
+                                
+                            </ul>
+                             
+                          </div>
+                    <!-- <iframe  style="margin-left: -10px;"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234700.3041513901!2d77.26580275571172!3d23.199663280737127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c428f8fd68fbd%3A0x2155716d572d4f8!2sBhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1616832278430!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                       -->
+                    <!-- <img src="bang/truck1.png" alt=""> -->
+                     </div>
+                     <!-- <div class="slider-item1">
+                        <img src="bang/truck2.png" alt="">
+                    </div>
+                    <div class="slider-item1">
+                        <img src="bang/truck3.png" alt="">
+                    </div>
+                    <div class="slider-item1">
+                        <img src="bang/truck4.png" alt="">
+                    </div> -->
+
+                 </div>
+
+                </div>
+
+                <div class="content">
+                    <h4 style="color :black;">Financial Plan</h4>
+                    I tend to prefer locations close to the National mall.
+                    We will be able to attract
+                </div>
+                <div class="content-a">
+                    <h4 style="color :black;">Business objective</h4>
+                    My top 3 locations options are :
+                    <ul>
+                        <li> 14th and F streat </li>
+                        <li>Constituion and 20th street</li>
+                        
+                        <li>Ten downing treet</li>
+                        
+                    </ul>
+                     
+                  </div>
+                  <div class="content">
+                    <h4 style="color :black;">Our Mission</h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, laboriosam!
+
+                </div>
+                
+                    <span style="color: black;">@ Carole</span>
+                       - there is that street Tacos spot right on 14th street. Do <br>
+                       you think that will be a problem?
+
+                    <!-- <div class="slider">
+                         <h3>Menu design:</h3>
+                            we should keep the menu simple - just a few diffrent kinds of tacos.
+                            We'll need options for dietary restrictions too.
+                            Do you have any idea for this,@Julia?
+                            <span class="menus">
+                                As far as design I was thinking a big chalkboard menu.
+                                Here are some 
+                            </span>   
+                         <div class="slider-item">
+                            <div class="slider-item1">
+                             <img src="bang/menu1.png" alt="">
+                            </div>
+                            <div class="slider-item1">
+                               <img src="bang/menu2.png" alt="">
+                           </div>
+                           <div class="slider-item1">
+                               <img src="bang/truck1.png" alt="">
+                           </div>
+                           
+                         </div>
+
+                    </div>
+                    <div class="menus1">
+                    lets keep the menu for no more then
+                     6 options- 3 meat, 1 seafood and 1
+                     vegetarian option.<br>
+                     <span style="color: black;" 
+                     >
+                         @Steve
+                     </span>-would you want to have photos on the menu?
+                     <br>
+                     <div style="color: black;" >
+
+                        @Julia
+                     </div> -I don't think so. I was thinhking the main 
+                    manu could look something like this:
+
+                    </div> -->
+
+
+
+                    
+
+              
+
+            </div> 
+
+            <!-- scroll control -->
+        </div>
+    </div>
+   
+   </div>
+    
+</body>
+</html>
+

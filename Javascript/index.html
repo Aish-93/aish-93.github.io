@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venilla JS carousel</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="carousel">
+        <button class="carousel__button carousel__button--left is-hidden">
+            <img src="forward.svg" alt="">
+        </button>
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                    <img  class="carousel__image"
+                    src="image1.jpg" alt="">
+                </li>
+
+                <li class="carousel__slide">
+                    <img class="carousel__image"
+                     src="image2.jpg" alt="">
+                </li>
+
+                <li class="carousel__slide">
+                    <img class="carousel__image"
+                    src="image3.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+        <button class="carousel__button carousel__button--right">
+            <img src="back.svg" alt="">
+        </button>
+
+        <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+        </div>
+    </div>
+
+    <script src="js/carousal.js">
+    </script>
+</body>
+</html>
